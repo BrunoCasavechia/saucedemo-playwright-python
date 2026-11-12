@@ -14,8 +14,11 @@ fake_zip_code = fake.numerify("#####-###")
 def test_complete_purchase(logged_page):
     """
     GIVEN the user is logged in
+
     AND has added products to the cart
+
     WHEN the user completes the checkout
+
     THEN the order confirmation message should be displayed
     """
     products = ProductsPage(logged_page)
