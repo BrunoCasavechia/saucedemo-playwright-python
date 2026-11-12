@@ -13,7 +13,7 @@ End-to-end test automation for [SauceDemo](https://www.saucedemo.com/), built wi
 ## Project Structure
 
 ```
-Project-SauceDemo/
+saucedemo-playwright-python/
 ├── pages/                      # Page Objects
 │   ├── LoginPage.py
 │   ├── ProductsPage.py
@@ -54,8 +54,8 @@ Test cases are documented using the **Given / When / Then** (BDD) format.
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/Project-SauceDemo.git
-cd Project-SauceDemo
+git clone https://github.com/BrunoCasavechia/saucedemo-playwright-python.git
+cd saucedemo-playwright-python
 
 python -m venv .venv
 # Windows
