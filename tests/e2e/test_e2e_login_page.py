@@ -14,8 +14,11 @@ pwd_fake = fake.password()
 def test_login_valid(page):
     """
     GIVEN the user is on the login page
+
     WHEN the user logs in with valid credentials
+
     AND clicks the Login button
+
     THEN the products page should be displayed
     """
     login = LoginPage(page)
@@ -29,9 +32,13 @@ def test_login_valid(page):
 def test_login_invalid_credentials(page):
     """
     GIVEN the user is on the login page
+
     WHEN the user logs in with invalid credentials
+
     AND clicks the Login button
+
     THEN the error message "Username and password do not match any user" should be displayed
+
     AND the user should remain on the login page
     """
     login = LoginPage(page)
@@ -45,9 +52,13 @@ def test_login_invalid_credentials(page):
 def test_login_empty_username(page):
     """
     GIVEN the user is on the login page
+
     WHEN the user tries to log in with the username field empty
+
     AND clicks the Login button
+
     THEN the error message "Username is required" should be displayed
+
     AND the user should remain on the login page
     """
     login = LoginPage(page)
@@ -61,9 +72,13 @@ def test_login_empty_username(page):
 def test_login_empty_pwd(page):
     """
     GIVEN the user is on the login page
+
     WHEN the user tries to log in with the password field empty
+
     AND clicks the Login button
+
     THEN the error message "Password is required" should be displayed
+
     AND the user should remain on the login page
     """
     login = LoginPage(page)
